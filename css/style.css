@@ -14,6 +14,8 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-grey: #F0F0F0;
+    --clr-shadow: #888888;
+    --clr-soft-blue: #F2FAFF;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -22,7 +24,7 @@
 }
 
 body {
-  background: var(--clr-grey);
+  background: var(--clr-soft-blue);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
@@ -31,8 +33,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 w{
     line-height: 1.1;
     margin: 0;
 }
@@ -48,8 +49,8 @@ strong { font-weight: var(--fw-bold) }
 }
 
 .section-about{
-  box-shadow: 3px 3px 3px 3px #888888;
-  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px var(--clr-shadow);
+  border-radius: 7px;
   background: white;
   max-width: 38rem;
 }
@@ -80,3 +81,11 @@ strong { font-weight: var(--fw-bold) }
   font-size: var(--fs-icons);
   color: var(--clr-dark);
 }
+
+/*@media (min-width: 900px) {*/
+    /*:root {*/
+        /*--fs-h1: 4.5rem;*/
+        /*--fs-h2: 3.75rem;*/
+        /*--fs-body: 1.125rem;*/
+    /*}*/
+/*}*/
